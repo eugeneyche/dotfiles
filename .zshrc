@@ -16,7 +16,7 @@ precmd() {
     else
         pr_color="$fg[red]"
     fi
-    pr_header="%{$fg[cyan]%}$(pwd)%{$reset_color%}"
+    pr_header="%{$fg[magenta]%}$(hostname) %{$fg[cyan]%}$(pwd)%{$reset_color%}"
     git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null) 
     if [ $? -eq 0 ]
     then
