@@ -21,8 +21,8 @@ set nu
 set scrolloff=10
 
 set nowrap
-
 set cursorline cursorcolumn
+set laststatus=2
 
 set t_Co=16
 

@@ -12,19 +12,26 @@ precmd() {
     local pr_color
     if [ ${last_status} -eq 0  ] 
     then 
-        pr_color="$fg[green]"
+        pr_color="$fg[blue]"
+    elif [ ${last_status} -eq 148  ] 
+    then
+        pr_color="$fg[magenta]"
     else
         pr_color="$fg[red]"
     fi
-    pr_header="%{$fg[magenta]%}$(hostname) %{$fg[cyan]%}$(pwd)%{$reset_color%}"
+    pr_header="%{$fg[cyan]%}$(hostname) %{$fg_no_bold[green]%}$(pwd)%{$reset_color%}"
     git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null) 
     if [ $? -eq 0 ]
     then
-        pr_header="${pr_header} %{$fg[yellow]%}${git_branch}%{$reset_color%}"
+        pr_header="${pr_header} %{$fg[white]%}${git_branch}%{$reset_color%}"
+        if [ -n "$(git status --porcelain)" ] 
+        then 
+            pr_header="${pr_header}%{$fg[yellow]%}*%{$reset_color%}"
+        fi
     fi
     pr_arrow="%{${pr_color}%}⏵ %{$reset_color%}"
 }
-   
+
 setopt prompt_subst
 PROMPT=\
 '${pr_header}
