@@ -15,11 +15,11 @@ precmd() {
         pr_color="$fg[blue]"
     elif [ ${last_status} -eq 148  ] 
     then
-        pr_color="$fg[magenta]"
+        pr_color="$fg[cyan]"
     else
         pr_color="$fg[red]"
     fi
-    pr_header="%{$fg[cyan]%}$(hostname) %{$fg_no_bold[green]%}$(pwd)%{$reset_color%}"
+    pr_header="%{$fg[magenta]%}$(hostname) %{$fg_no_bold[green]%}$(pwd)%{$reset_color%}"
     git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null) 
     if [ $? -eq 0 ]
     then
@@ -36,12 +36,11 @@ setopt prompt_subst
 PROMPT='${pr_header}
 ${pr_arrow}'
 
-if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
-fi
-
 alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
+
+alias ag='sudo apt-get'
+alias ac='apt-cache'
 
 alias op='xdg-open'

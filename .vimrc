@@ -41,4 +41,3 @@ map <C-n> :NERDTreeToggle<CR>
 
 let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
-
