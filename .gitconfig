@@ -11,3 +11,5 @@
 [user]
 	email = eugeneyche@gmail.com
 	name = Eugene Che
+[core]
+	editor = vim
