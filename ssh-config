@@ -1,0 +1,51 @@
+Host hive1.berkeley
+    HostName hive1.cs.berkeley.edu
+
+Host hive2.berkeley
+    HostName hive2.cs.berkeley.edu
+
+Host hive3.berkeley
+    HostName hive3.cs.berkeley.edu
+
+Host hive4.berkeley
+    HostName hive4.cs.berkeley.edu
+
+Host hive5.berkeley
+    HostName hive5.cs.berkeley.edu
+
+Host hive6.berkeley
+    HostName hive6.cs.berkeley.edu
+
+Host hive7.berkeley
+    HostName hive7.cs.berkeley.edu
+
+Host hive8.berkeley
+    HostName hive8.cs.berkeley.edu
+
+Host hive9.berkeley
+    HostName hive9.cs.berkeley.edu
+
+Host hive10.berkeley
+    HostName hive10.cs.berkeley.edu
+
+Host hive11.berkeley
+    HostName hive11.cs.berkeley.edu
+
+Host hive12.berkeley
+    HostName hive12.cs.berkeley.edu
+
+Host hive13.berkeley
+    HostName hive13.cs.berkeley.edu
+
+Host hive14.berkeley
+    HostName hive14.cs.berkeley.edu
+
+Host hive15.berkeley
+    HostName hive15.cs.berkeley.edu
+
+Host cory.berkeley
+    HostName cory.eecs.berkeley.edu
+
+Host ramblaze.berkeley
+    User eugene 
+    HostName ramblaze.ist.berkeley.edu
