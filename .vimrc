@@ -31,9 +31,9 @@ set expandtab
 set encoding=utf-8
 set nu
 set scrolloff=10
+set cursorline
 
 set nowrap
-set cursorline cursorcolumn
 set laststatus=2
 
 " Color scheme
