@@ -16,10 +16,11 @@ set t_Co=16
 hi LineNr           cterm=None	    ctermbg=0       ctermfg=7
 hi CursorLineNr     cterm=None	    ctermbg=0	    ctermfg=12
 
-hi StatusLine	    cterm=None	    ctermbg=8	    ctermfg=6
-hi StatusLineNC	    cterm=None	    ctermbg=8	    ctermfg=15
+hi StatusLine	    cterm=None	    ctermbg=8	    ctermfg=15
+hi StatusLineNC	    cterm=None	    ctermbg=8	    ctermfg=7
 hi VertSplit	    cterm=None	    ctermbg=0	    ctermfg=8
 
-hi TabLine	        cterm=None	    ctermbg=8	    ctermfg=15
-hi TabLineSel	    cterm=None	    ctermbg=8	    ctermfg=6
+hi Title	        cterm=None	    ctermfg=9
+hi TabLine	        cterm=None	    ctermbg=8	    ctermfg=7
+hi TabLineSel	    cterm=None	    ctermbg=8	    ctermfg=15
 hi TabLineFill	    cterm=None	    ctermbg=8
