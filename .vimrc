@@ -14,11 +14,14 @@ Plugin 'ervandew/supertab'
 call vundle#end()
 filetype plugin indent on
 
+" Annoying delay
+set timeoutlen=1000 ttimeoutlen=0
+
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
 
-" System Clipboard
+" System clipboard
 set clipboard=unnamed
 
 " Syntax highlighting
@@ -27,11 +30,10 @@ set ts=4 sts=4 sw=4
 set autoindent
 set expandtab
 
-" Basic editor
+" Basic editing
 set encoding=utf-8
 set nu
 set scrolloff=10
-set cursorline
 
 set nowrap
 set laststatus=2
