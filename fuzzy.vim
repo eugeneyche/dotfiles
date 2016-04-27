@@ -14,7 +14,9 @@ set t_Co=16
 
 " Container
 hi LineNr           cterm=None	    ctermbg=0       ctermfg=7
-hi CursorLineNr     cterm=None	    ctermbg=0	    ctermfg=12
+hi CursorLineNr     cterm=None	    ctermbg=8	    ctermfg=3
+
+hi CursorLine	    cterm=None	    ctermbg=0
 
 hi StatusLine	    cterm=None	    ctermbg=8	    ctermfg=15
 hi StatusLineNC	    cterm=None	    ctermbg=8	    ctermfg=7

@@ -38,6 +38,8 @@ set scrolloff=10
 set nowrap
 set laststatus=2
 
+set cursorline
+
 " Color scheme
 colorscheme fuzzy
 
